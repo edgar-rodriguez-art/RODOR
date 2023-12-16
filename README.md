@@ -1,2 +1,14 @@
 # RODOR
+[English]
 RODOR algorithm for the identification of irregular surfaces with circular contours applied to the recognition and counting of coins
+
+Precision in the identification of objects contained in an image is a fundamental task in computer vision used in practical applications, an activity that has been simplified with the use of neural networks which have a high cost to be implemented because they require access to large amounts of data, considerable training time and resources.
+In the present work we explore the possibility of using the RODOR algorithm, without the use of neural networks, which requires a minimum amount of data and resources for training. It is based on the generation of a matrix of features that allows us to identify circular contours with irregular surfaces and we have applied it in the recognition of coins from 4 countries, identifying the irregular surfaces of each coin at any angle of rotation.
+The RODOR algorithm trains a data set using several algorithms, including Canny for identifying edges, the Sunken function for locating sunken reliefs accounted for by the Hamming distance, the Hough transform in the recognition of circular areas, the radio search and diameter. The algorithm was developed in Python and allows the evaluation of images with individual or grouped coins on a white background.
+
+[Español]
+Algoritmo RODOR para la identificación de superficies irregulares con contornos circulares aplicado al reconocimiento y conteo de monedas
+
+La precisión en la identificación de objetos contenidos en una imagen es una tarea fundamental en la visión computarizada utilizada  en aplicaciones prácticas, actividad que se ha simplificado con el uso de redes neuronales las cuáles tiene un alto costo para ser implementadas porque requieren de acceso a grandes cantidades de datos, tiempo considerable de entrenamiento y recursos.
+En el presente trabajo exploramos la posibilidad de utilizar el algoritmo RODOR, sin el uso de redes neuronales, que requiere una cantidad mínima de datos y recursos para su entrenamiento. Se apoya en la generación de una matriz de rasgos que permite identificar contornos circulares con superficies irregulares y lo hemos aplicado en el reconocimiento de monedas de 4 países, identificando las superficies irregulares de cada moneda en cualquier ángulo de rotación.
+El algoritmo RODOR entrena un set de datos utilizando varios algoritmos, entre ellos Canny para identificación de bordes, la función Sunken para localización de relieves hundidos contabilizados por la distancia Hamming, la transformada de Hough en el reconocimiento de áreas circulares, la búsqueda de radio y diámetro. El algoritmo fue desarrollado en Python y permite la evaluación de imágenes con monedas individuales o agrupadas sobre un fondo blanco.
